@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install - OROBOROS OS</title>
+    <meta name="description" content="Download and install OROBOROS OS. Multiple installation options including Live USB, Docker, and Virtual Machine.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Available Now Banner -->
+    <div class="release-banner">
+        <div class="banner-content">
+            <span class="banner-badge">AVAILABLE NOW</span>
+            <span class="banner-text">OROBOROS OS V1.0 Public Release - The future of AI-powered computing is here</span>
+            <a href="https://github.com/oroboroslabs-ai/oroboros-os" class="banner-cta" target="_blank">Download Now</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">OROBOROS<span>OS</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="install.html">Install</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://docs.oroboros-os.com" target="_blank">Docs</a></li>
+        </ul>
+        <ul class="nav-products">
+            <li><a href="/products/3-healers/">3 Healers</a></li>
+            <li><a href="/products/memory-core/">Memory Core</a></li>
+            <li><a href="/products/oroboros-9-stack/">O9 Stack</a></li>
+            <li><a href="/products/oroboros-9/">Oroboros 9</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Download & Install</h1>
+        <p>Get OROBOROS OS running on your system in minutes. Choose the installation method that works best for you.</p>
+    </section>
+
+    <!-- Installation Options -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2>Installation Options</h2>
+            <p>Multiple ways to run OROBOROS OS</p>
+        </div>
+        <div class="install-grid">
+            <!-- GitHub Repository -->
+            <div class="install-card" id="github">
+                <h3>GitHub Repository <span class="badge">Open Source</span></h3>
+                <p>Download the complete source code from GitHub. Build from source, customize, and contribute to the project.</p>
+                <div class="install-steps">
+                    <ol>
+                        <li>Clone the repository:<br><code>git clone https://github.com/oroboroslabs-ai/oroboros-os</code></li>
+                        <li>Navigate to the directory:<br><code>cd oroboros-os</code></li>
+                        <li>Install dependencies:<br><code>pip install -r requirements.txt</code></li>
+                        <li>Run the application:<br><code>python -m oroboros serve</code></li>
+                        <li>Open your browser to <code>http://localhost:8080</code></li>
+                    </ol>
+                </div>
+                <a href="https://github.com/oroboroslabs-ai/oroboros-os" class="btn btn-primary" target="_blank">Download from GitHub</a>
+            </div>
+
+            <!-- Live USB -->
+            <div class="install-card">
+                <h3>Live USB <span class="badge">Recommended</span></h3>
+                <p>Boot directly from a USB drive without modifying your existing system. Perfect for trying OROBOROS OS or running it as a portable environment.</p>
+                <div class="install-steps">
+                    <ol>
+                        <li>Download the Live USB image (ISO file)</li>
+                        <li>Flash the image to a USB drive (32GB+ recommended) using <code>balenaEtcher</code> or <code>Rufus</code></li>
+                        <li>Restart your computer and boot from the USB drive</li>
+                        <li>Select "Start OROBOROS OS" from the boot menu</li>
+                        <li>Begin using OROBOROS OS immediately</li>
+                    </ol>
+                </div>
+                <a href="#downloads" class="btn btn-primary">Download USB Image</a>
+            </div>
+
+            <!-- Docker -->
+            <div class="install-card">
+                <h3>Docker Container</h3>
+                <p>Run OROBOROS OS as a Docker container. Ideal for server deployments, testing, or integrating with existing containerized environments.</p>
+                <div class="install-steps">
+                    <ol>
+                        <li>Ensure Docker is installed on your system</li>
+                        <li>Pull the OROBOROS OS image:<br><code>docker pull oroboroslabs-ai/oroboros-os:v1.0</code></li>
+                        <li>Run the container:<br><code>docker run -it -p 8080:8080 oroboroslabs-ai/oroboros-os:v1.0</code></li>
+                        <li>Open your browser to <code>http://localhost:8080</code></li>
+                    </ol>
+                </div>
+                <a href="https://hub.docker.com/r/oroboroslabs-ai/oroboros-os" class="btn btn-secondary" target="_blank">View on Docker Hub</a>
+            </div>
+
+            <!-- Virtual Machine -->
+            <div class="install-card">
+                <h3>Virtual Machine</h3>
+                <p>Run OROBOROS OS in a virtual machine. Great for isolated testing, development environments, or running alongside your main OS.</p>
+                <div class="install-steps">
+                    <ol>
+                        <li>Download the VM image (OVA format)</li>
+                        <li>Open VirtualBox, VMware, or your preferred hypervisor</li>
+                        <li>Import the OVA file (File > Import Appliance)</li>
+                        <li>Allocate at least 8GB RAM and 4 CPU cores</li>
+                        <li>Start the virtual machine</li>
+                    </ol>
+                </div>
+                <a href="#downloads" class="btn btn-secondary">Download VM Image</a>
+            </div>
+
+            <!-- Docker Compose -->
+            <div class="install-card">
+                <h3>Docker Compose</h3>
+                <p>Full stack deployment with all services configured. Best for production deployments or when you need the complete OROBOROS OS environment.</p>
+                <div class="install-steps">
+                    <ol>
+                        <li>Download the docker-compose.yml file</li>
+                        <li>Create a directory for OROBOROS OS data</li>
+                        <li>Run: <code>docker-compose up -d</code></li>
+                        <li>Access at <code>http://localhost:8080</code></li>
+                        <li>View logs: <code>docker-compose logs -f</code></li>
+                    </ol>
+                </div>
+                <a href="#downloads" class="btn btn-secondary">Download Compose File</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section id="requirements" class="content-section">
+        <div class="section-header">
+            <h2>System Requirements</h2>
+            <p>What you need to run OROBOROS OS</p>
+        </div>
+
+        <div class="feature-detail">
+            <div class="feature-detail-content">
+                <h3>Minimum Requirements</h3>
+                <p>Basic operation with smaller AI models and essential features.</p>
+                <table class="requirements-table">
+                    <tr>
+                        <th>Component</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Processor</td>
+                        <td>64-bit CPU, 4 cores minimum</td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td>8 GB RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>50 GB available space (SSD recommended)</td>
+                    </tr>
+                    <tr>
+                        <td>USB (for Live USB)</td>
+                        <td>32 GB USB 3.0 drive</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>Windows 10+, macOS 12+, or Linux kernel 5.4+</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="feature-detail-content">
+                <h3>Recommended Requirements</h3>
+                <p>Optimal performance with larger models and full AI capabilities.</p>
+                <table class="requirements-table">
+                    <tr>
+                        <th>Component</th>
+                        <th>Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Processor</td>
+                        <td>64-bit CPU, 8+ cores</td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td>16-32 GB RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>200 GB SSD (NVMe preferred)</td>
+                    </tr>
+                    <tr>
+                        <td>Graphics</td>
+                        <td>NVIDIA RTX 3060+ (8GB+ VRAM) for GPU acceleration</td>
+                    </tr>
+                    <tr>
+                        <td>USB (for Live USB)</td>
+                        <td>64+ GB USB 3.1/3.2 drive</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h4>GPU Support Notes</h4>
+            <ul>
+                <li><strong>NVIDIA:</strong> CUDA 11.7+ required. RTX 3060 or better recommended for local AI models.</li>
+                <li><strong>AMD:</strong> ROCm support available for Radeon RX 6000 series and newer.</li>
+                <li><strong>Apple Silicon:</strong> Full Metal support for M1/M2/M3 chips with unified memory benefits.</li>
+                <li><strong>CPU Only:</strong> Works without GPU but AI inference will be slower. Recommended for basic use only.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="content-section">
+        <div class="section-header">
+            <h2>Downloads</h2>
+            <p>Get the version you need</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">ISO</div>
+                <h3>Live USB Image</h3>
+                <p>Bootable ISO image for creating a Live USB installation. Works with balenaEtcher, Rufus, or dd.</p>
+                <p><strong>Size:</strong> ~8 GB</p>
+                <p><strong>Version:</strong> 1.0.0 Public Release</p>
+                <a href="#" class="btn btn-primary">Download ISO</a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">OVA</div>
+                <h3>VM Image</h3>
+                <p>Pre-configured virtual machine image. Compatible with VirtualBox, VMware, and other hypervisors.</p>
+                <p><strong>Size:</strong> ~12 GB</p>
+                <p><strong>Version:</strong> 1.0.0 Public Release</p>
+                <a href="#" class="btn btn-primary">Download OVA</a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">TAR</div>
+                <h3>Source Package</h3>
+                <p>Complete source code and build scripts for custom installations and development.</p>
+                <p><strong>Size:</strong> ~500 MB</p>
+                <p><strong>Version:</strong> 1.0.0 Public Release</p>
+                <a href="#" class="btn btn-secondary">Download Source</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2>Quick Start Guide</h2>
+            <p>Get up and running in minutes</p>
+        </div>
+        <div class="feature-detail">
+            <div class="feature-detail-content">
+                <h3>First Boot Setup</h3>
+                <p>When you first start OROBOROS OS, the setup wizard will guide you through initial configuration:</p>
+                <ul>
+                    <li><strong>Language & Region:</strong> Select your preferred language and timezone.</li>
+                    <li><strong>AI Model Selection:</strong> Choose which AI models to download. Start with smaller models if space is limited.</li>
+                    <li><strong>Privacy Settings:</strong> Configure your privacy preferences. All options default to maximum privacy.</li>
+                    <li><strong>System Check:</strong> Automatic hardware detection to optimize AI performance for your system.</li>
+                    <li><strong>Ready to Use:</strong> After setup, you're ready to start using OROBOROS OS.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h4>First Steps</h4>
+                    <ul>
+                        <li>Open the AI Chat application to start interacting with your assistant</li>
+                        <li>Use Model Manager to download additional AI models</li>
+                        <li>Check System Settings to customize your experience</li>
+                        <li>Visit the Documentation for in-depth guides</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-visual">START</div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2>Troubleshooting</h2>
+            <p>Common issues and solutions</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>USB Won't Boot</h3>
+                <p>Ensure Secure Boot is disabled in BIOS/UEFI settings. Try a different USB port (preferably USB 3.0). Verify the ISO was written correctly using the verification checksum.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Slow AI Performance</h3>
+                <p>Check if GPU is detected in System Settings. Try smaller AI models if RAM is limited. Ensure no other applications are using GPU resources.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Docker Connection Failed</h3>
+                <p>Verify Docker daemon is running. Check if port 8080 is available. Try running with elevated privileges if permission errors occur.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>VM Performance Issues</h3>
+                <p>Allocate more RAM to the VM (16GB+ recommended). Enable VT-x/AMD-V virtualization in BIOS. Use SSD storage for the VM disk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Need Help?</h2>
+        <p>Join our community for support and discussions.</p>
+        <div class="hero-buttons">
+            <a href="https://discord.gg/oroboroslab" class="btn btn-primary" target="_blank">Join Discord</a>
+            <a href="https://docs.oroboros-os.com" class="btn btn-secondary" target="_blank">Read Documentation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>OROBOROS OS</h4>
+                <p style="color: var(--gray);">The AI-powered operating environment for the future of computing.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="install.html">Download</a></li>
+                    <li><a href="https://docs.oroboros-os.com">Documentation</a></li>
+                    <li><a href="install.html#requirements">System Requirements</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://docs.oroboros-os.com/guides">User Guides</a></li>
+                    <li><a href="https://docs.oroboros-os.com/api">API Reference</a></li>
+                    <li><a href="https://discord.gg/oroboroslab">Community</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>OROBOROS OS V1.0 - Public Release | Level 99 Foundation | Copyright 2024-2026 Oroboros Labs</p>
+        </div>
+    </footer>
+</body>
+</html>
